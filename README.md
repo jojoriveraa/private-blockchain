@@ -62,3 +62,6 @@ For othe OS just look into installation guides for each tool
 - web3.eth.accounts: Return a list with available accounts
 - web3.eth.getBalance("[Account-hash]"): Return the balance of given account
 
+# Smart contract
+## Compile
+- `solc --bin --abi SimpleStorage.sol`
