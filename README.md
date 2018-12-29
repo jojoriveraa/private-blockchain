@@ -65,3 +65,18 @@ For othe OS just look into installation guides for each tool
 # Smart contract
 ## Compile
 - `solc --bin --abi SimpleStorage.sol`
+
+Example output:
+
+```
+======= SimpleStorage.sol:SimpleStorage =======
+Binary: 
+608060405234801561001057600080fd5b5060da8061001f6000396000f3fe6080604052348015600f57600080fd5b5060043610604f576000357c01000000000000000000000000000000000000000000000000000000009004806360fe47b11460545780636d4ce63c14607f575b600080fd5b607d60048036036020811015606857600080fd5b8101908080359060200190929190505050609b565b005b608560a5565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea165627a7a72305820601339ee69bb90e3b52f77ffaea9c903449afb264cc499f49e260b7cc8bba4fc0029
+Contract JSON ABI 
+[{"constant":false,"inputs":[{"name":"x","type":"uint256"}],"name":"set","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"get","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}]
+
+```
+
+# Common issues
+## Source file requires different compiler version
+Please, look into (official doc)[https://solidity.readthedocs.io/en/v0.5.2/introduction-to-smart-contracts.html] and checkout a compatible script
