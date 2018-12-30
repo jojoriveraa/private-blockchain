@@ -76,3 +76,5 @@
 10:06:01.718138 table@remove removed @15
 10:06:01.718276 table@remove removed @12
 10:06:01.718391 table@remove removed @7
+10:14:54.261847 db@close closing
+10:14:54.262267 db@close done T·410.253µs
