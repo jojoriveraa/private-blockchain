@@ -150,6 +150,43 @@ undefined
 
 ```
 
+## Call contract's functions
+
+```
+# Save balance status
+> var beforeBalance = web3.eth.getBalance(testAccount)
+undefined
+
+# Unlock account to call functions
+> personal.unlockAccount(testAccount)
+Unlock account 0x3419b1faabc867b052483f60de73c78e3dcfd86e
+Passphrase: 
+true
+
+# In the begining contract instance has a value of 0
+> contractInstance.get()
+0
+
+# Call the set funtion and set the value of 50
+> contractInstance.set(50)
+"0x739b3d0c8dc1c2e0e68d67ee89aa12f633a2461504255550ed9d27767101a253"
+
+# New value is 50
+> contractInstance.get()
+50
+
+# Save balance status
+> var afterBalance = web3.eth.getBalance(testAccount)
+undefined
+
+# Calculate the cos of calling the function
+> var cost = beforeBalance - afterBalance
+undefined
+
+> cost
+41689000000000
+
+```
 
 # Common issues
 ## Source file requires different compiler version
